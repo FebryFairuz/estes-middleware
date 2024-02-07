@@ -1,14 +1,19 @@
-#Starting Project
+# Starting Project
+
 `npm init`
 
-#Create orm:
+# Create orm:
+
 `npx sequelize-cli init`
 
-#Create Migrations:
+# Create Migrations:
+
 `npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string`
 
-#Running Migrations:
+# Running Migrations:
+
 `npx sequelize-cli db:migrate`
 
-#Running Server:
+# Running Server:
+
 `nodemon index`
