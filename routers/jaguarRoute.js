@@ -1,9 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const jaguarController = require("../controllers/jaguarController");
+const jaguarAuthController = require("../controllers/jaguarAuthController");
+const jaguarRequestTargetController = require("../controllers/jaguarRequestTargetController");
 
 //List of routes
-router.post("/auth", jaguarController.authentication);
+router.post("/auth", jaguarAuthController.authentication);
+router.post("/req-module", jaguarRequestTargetController.requestModule);
 //End list
 
 module.exports = router;
